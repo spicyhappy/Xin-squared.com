@@ -73,6 +73,23 @@
 		float: none;
 		text-align: center;
 	}
+
+	figure.img-side {
+		margin-bottom: (40/18) + em;
+		img {
+			width: 100%;
+			margin: 0;
+			margin-bottom: (10/18) + em;
+		}
+	}
+
+	footer {
+		text-align: center;
+
+		.avatar {
+			float: none;
+		}
+	}
 }
 
 

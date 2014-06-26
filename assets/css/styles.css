@@ -956,6 +956,7 @@ button, .button {
   padding: 0 1.125em;
   padding-top: 0.0625em;
   font-size: 0.875em;
+  text-transform: uppercase;
   letter-spacing: 0.09375em;
   -moz-font-feature-settings: 'c2sc', 'smcp';
   -webkit-font-feature-settings: 'c2sc', 'smcp';
@@ -968,12 +969,12 @@ button, .button {
   margin-right: 1em;
 }
 
-/* line 27, _forms.scss */
+/* line 28, _forms.scss */
 button:last-of-type, .button:last-of-type {
   margin-right: 0;
 }
 
-/* line 31, _forms.scss */
+/* line 32, _forms.scss */
 button:hover, .button:hover, .button:focus {
   background-color: #ff4a40;
   color: white;
@@ -1058,9 +1059,29 @@ button:hover, .button:hover, .button:focus {
     float: none;
     text-align: center;
   }
+
+  /* line 77, _media-queries.scss */
+  figure.img-side {
+    margin-bottom: 2.22222em;
+  }
+  /* line 79, _media-queries.scss */
+  figure.img-side img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.55556em;
+  }
+
+  /* line 86, _media-queries.scss */
+  footer {
+    text-align: center;
+  }
+  /* line 89, _media-queries.scss */
+  footer .avatar {
+    float: none;
+  }
 }
 @media (max-height: 480px) {
-  /* line 82, _media-queries.scss */
+  /* line 99, _media-queries.scss */
   header {
     height: auto;
     padding: 2.77778rem 0;
