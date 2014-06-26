@@ -1,0 +1,28 @@
+
+Next goal: finish prototype
+
+//// ON FIRE ////
+
+- fonts working
+- IE 9+
+- Chrome
+- Firefox
+- iPhone
+	- photo cover not working
+	- navigation stacks weird
+	- weird black bar
+	- low res images
+	- full width side captions, footer
+	- h2 resume caption
+	- local nav
+- Android
+- iPad
+
+
+//// QUICK FIXES ////
+
+
+
+//// NICE TO HAVE ////
+
+- preload all images
