@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Xin Xin</title>
-    <meta name="description" content="designer and storyteller">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Xin Xin</title>
+	<meta name="description" content="designer and storyteller">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	<link rel="alternate" type="application/rss+xml" title="Xin Xin" href="/rss/">
 	<link rel="canonical" href="http://xin-squared.com/">
     
@@ -22,16 +22,6 @@
     </script>
 </head>
 <body>
-
-<style type="text/css">
-	html {
-		background: #111111 url(images/jiuzhaigou3-dark.jpg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-</style>
 
 <nav>
 	<a class="blog-title small-caps h2" href="index.html">X2</a>
@@ -116,6 +106,14 @@
 		<a href="https://twitter.com/xinsq" class="button">Xinsq</a><a href="mailto:xin@xin-squared.com" class="button">Email</a>
 	</div>
 </footer>
+
+<!-- Include jquery and backstretch -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script>
+	// Still an issue with backstretch not accounting for iOS bottom UI. Removing iOS UI with "minimal-ui" in meta viewport
+    $.backstretch("images/jiuzhaigou3-dark.jpg");
+</script>
 
 </body>
 </html>
