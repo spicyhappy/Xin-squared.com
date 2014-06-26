@@ -1,3 +1,5 @@
+
+
 @media (max-width: 800px) {
 	nav {
 		position: absolute;
@@ -44,8 +46,19 @@
 
 @media (max-width: 480px) {
 
+
 	nav {
 		position: static;
+		width: (200/18) + em;
+		margin: 0 auto;
+
+		li {
+			line-height: 2rem;
+		}
+
+		li:nth-of-type(2), li:nth-of-type(4) {
+			margin-right: 0;
+		}
 	}
 
 	main.inner-side {
