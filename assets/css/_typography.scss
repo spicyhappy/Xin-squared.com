@@ -1,0 +1,86 @@
+@import 'variables';
+
+// Used scale from: http://modularscale.com/scale/?px1=18&px2=14&ra1=1.618&ra2=0
+
+body {
+	font-size: 100%;
+}
+
+body {
+	font-family: $base-font-family;
+	font-size: (18/16) + rem;
+	line-height: (30/16) + rem;
+	font-weight: 400;
+	-webkit-text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+}
+
+.small-caps {
+	font-style: normal;
+	font-size: (18/16) + rem;
+	letter-spacing: (1.5/16) + rem;
+	line-height: (25/16) + rem;
+	text-transform: uppercase;
+	-moz-font-feature-settings: 'c2sc';
+	-webkit-font-feature-settings: 'c2sc';
+	-ms-font-feature-settings: 'c2sc';
+	font-feature-settings: 'c2sc';
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+	-moz-font-feature-settings: 'c2sc';
+	-webkit-font-feature-settings: 'c2sc';
+	-ms-font-feature-settings: 'c2sc';
+	font-feature-settings: 'c2sc';
+}
+
+h1, .h1 {
+	font-size: (47/16) + rem;
+	line-height: (59/16) + rem;
+}
+
+h2, .h2 {
+	font-size: (29/16) + rem;
+	line-height: (40/16) + rem;
+}
+
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-size: (22/16) + rem;
+	line-height: (30/16) + rem;
+}
+
+blockquote {
+	font-style: italic;
+	text-align: center;
+
+	div:before {
+		content: '\201C';
+	}
+	div:after {
+		content: '\201D';
+	}
+	cite:before {
+		content: '\2014\2002';
+	}
+}
+
+.small {
+	font-size: (14/16) + rem;
+	line-height: (30/16) + rem;
+}
+
+a, a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+p a, figcaption>a {
+	text-decoration: underline;
+}
+
+a:hover {
+	color: $red;
+}

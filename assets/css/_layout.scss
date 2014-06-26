@@ -1,0 +1,233 @@
+@import 'variables';
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	color: white;
+}
+
+html {
+	background-color: $black;
+	overflow-y: scroll;
+}
+
+nav {
+	position: fixed;
+	padding: (30/18) + em (30/18) + em 0 (30/18) + em;
+	width: 100%;
+	z-index: $lower-zindex;
+	// Todo: support IE on this... http://stackoverflow.com/questions/3680429/click-through-a-div-to-underlying-elements
+	pointer-events: none;
+
+	.blog-title {
+		opacity: $text-opacity;
+		font-weight: bold;
+		font-style: normal;
+		float: left;
+		pointer-events: visible;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	ul {
+		text-align: right;
+		float: right;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		pointer-events: visible;
+		
+		a {
+			opacity: $text-opacity;
+			position: relative;
+		}
+
+		a:hover, .active {
+			opacity: 1;
+		}
+
+		.active {
+			pointer-events: none;
+			cursor: default;
+
+			&:before {
+				content: '';
+				width: (10/18) + em;
+				height: (10/18) + em;
+				background-color: $red;
+				display: inline-block;
+				border-radius: 50%;
+				margin-right: (5/18) + em;
+			}
+		}
+	}
+}
+
+.local-nav {
+	border-top: $line-transparent;
+	list-style: none;
+	max-width: (540/18) + em;
+	margin: 0 auto;
+	margin-top: (80/18) + em;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		margin-top: -(4/18) + em;
+		height: 50px;
+		line-height: 50px;
+		padding: 0 (10/18) + em;
+	}
+
+
+	li a {
+		opacity: 0.5;
+	}
+
+	.active a, li a:hover{
+		opacity: 1
+	}
+
+
+	.active {
+		pointer-events: none;
+		cursor: default;
+		border-top: $line;
+	}
+}
+
+header {
+	height: 60%;
+	max-height: (500/18) + em;
+	width: 100%;
+
+	// Account for the awefulness of vertical align
+	h1, h2, p {
+		max-width: (520/18) + em;
+		margin: (10/18) + rem auto;
+		padding: 0 (100/18) + rem;
+	}
+}
+
+.full-page {
+	height: 100%;
+	width: 100%;
+}
+
+main.inner-side {
+	max-width: (520/18) + em;
+	padding: (100/18) + em 0;
+	margin: 0 inherit;
+	margin: 0 (100/18) + rem;
+
+	h1, h2, p {
+		text-align: left;
+		margin: 0;
+	}
+}
+
+main.white-background {
+	z-index: $normal-zindex;
+	position: relative;
+	background-color: $gray-white;
+	color: $black;
+	padding: (20/18) + em 0
+}
+
+footer {
+	padding-top: (40/18) + em;
+
+	.avatar {
+		float: left;
+		border-radius: 50%;
+		margin-right: (20/18) + em;
+	}
+}
+
+.inner {
+	max-width: (540/18) + em;
+	padding: 0 (10/18) + em;
+	margin: 0 auto;
+}
+
+section, .section {
+	padding-bottom: (60/18) + em;
+	margin-top: (60/18) + em;
+	margin-bottom: (60/18) + em;
+	border-bottom: $thin-line;
+}
+
+section:last-of-type, .ssection:last-of-type {
+	border-bottom: none;
+}
+
+article {
+	margin: (30/18) + em 0;
+	border-bottom: $thin-line;
+	padding-bottom: (10/18) + em;
+
+	h3 {
+		margin-bottom: 0;
+	}
+
+	h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	p {
+		margin-top: (10/18) + em;
+	}
+}
+
+article:last-of-type {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+figure.img-side {
+
+	display: inline-block;
+	margin: 0;
+	clear: both;
+
+	img {
+		width: (160/18) + em;
+		float: left;
+		margin-right: (40/18) + em;
+		margin-bottom: (30/18) + em;
+	}
+}
+
+figure.img-side:first-of-type {
+	margin-top: (20/18) + em;
+}
+
+figure.img-side:last-of-type img {
+	margin-bottom: (30/18) + em;
+}
+
+figure.img-bottom {
+	margin: 0;
+	img {
+		width: 100%;
+	}
+}
+
+
+.vertical-align-parent {
+	display: table;
+}
+
+.vertical-align {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}

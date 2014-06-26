@@ -1,0 +1,32 @@
+// Colors
+$blue: #15BDED;
+$green: #00FFAC;
+$red: #FF4A40;
+$pink: #CC144E;
+$gray-white: #FDFDFD;
+$gray-light: #ECF0F1;
+$gray-dark: #D5D9DA;
+$black: #111111;
+
+// Defaults for things on photos
+$button-opacity: .6;
+$button-opacity-hover: 1;
+$photo-opacity: .6;
+$text-opacity: .5;
+$line-opacity: .3;
+
+// Z-index
+$top-zindex: 30;
+$upper-zindex: 20;
+$normal-zindex: 10;
+$lower-zindex: 0;
+$bottom-zindex: -10;
+
+// Fonts
+$base-font-family: 'adelle', georgia, serif;
+$code-font-familt: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// Borders and lines
+$thin-line: (2/16) + em solid $gray-light;
+$line: (4/16) + em solid $gray-light;
+$line-transparent: (4/16) + em solid rgba($gray-light, $line-opacity);

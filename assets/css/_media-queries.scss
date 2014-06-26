@@ -1,0 +1,79 @@
+@media (max-width: 800px) {
+	nav {
+		position: absolute;
+		padding: (20/18) + em (20/18) + em 0 (20/18) + em;
+
+		li {
+			display: inline-block;
+			margin-right: (20/18) + em;
+			line-height: 2.5rem;
+		}
+
+		li:last-of-type {
+			margin-right: 0;
+		}
+
+		.active:before {
+			position: absolute;
+			left: -15px;
+			top: 5px;
+		}
+	}
+
+	header.vertical-align-parent {
+		padding: (70/18) + em 0;
+
+	}
+
+	header h1, header h2, header p {
+		padding: 0;
+	}
+
+	h1 {
+		font-size: (36/16) + rem;
+		line-height: (50/16) + rem;
+	}
+
+	main.inner-side {
+		max-width: (540/18) + em;
+		padding-left: (10/18) + em;
+		padding-right: (10/18) + em;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 480px) {
+
+	nav {
+		position: static;
+	}
+
+	main.inner-side {
+		padding-top: (40/18) + em;
+	}
+
+	header.vertical-align-parent {
+		padding-top: (40/18) + em;
+	}
+
+	nav .blog-title {
+		width: 100%;
+		text-align: center;
+	}
+
+	nav ul {
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+	}
+}
+
+
+// Account for vertical % on headers
+
+@media (max-height: 480px) {
+	header {
+		height: auto;
+		padding: (50/18) + rem 0;
+	}
+}
