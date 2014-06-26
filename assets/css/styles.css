@@ -668,19 +668,10 @@ nav ul a:hover, nav ul .active {
 nav ul .active {
   pointer-events: none;
   cursor: default;
-}
-/* line 60, _layout.scss */
-nav ul .active:before {
-  content: '';
-  width: 0.55556em;
-  height: 0.55556em;
-  background-color: #ff4a40;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 0.27778em;
+  border-bottom: 0.125em solid #ecf0f1;
 }
 
-/* line 73, _layout.scss */
+/* line 64, _layout.scss */
 .local-nav {
   border-top: 0.25em solid rgba(236, 240, 241, 0.3);
   list-style: none;
@@ -689,7 +680,7 @@ nav ul .active:before {
   margin-top: 4.44444em;
   padding: 0;
 }
-/* line 81, _layout.scss */
+/* line 72, _layout.scss */
 .local-nav li {
   display: inline-block;
   margin-top: -0.22222em;
@@ -697,54 +688,54 @@ nav ul .active:before {
   line-height: 50px;
   padding: 0 0.55556em;
 }
-/* line 90, _layout.scss */
+/* line 81, _layout.scss */
 .local-nav li a {
   opacity: 0.5;
 }
-/* line 94, _layout.scss */
+/* line 85, _layout.scss */
 .local-nav .active a, .local-nav li a:hover {
   opacity: 1;
 }
-/* line 99, _layout.scss */
+/* line 90, _layout.scss */
 .local-nav .active {
   pointer-events: none;
   cursor: default;
   border-top: 0.25em solid #ecf0f1;
 }
 
-/* line 106, _layout.scss */
+/* line 97, _layout.scss */
 header {
   height: 60%;
   max-height: 27.77778em;
   width: 100%;
 }
-/* line 112, _layout.scss */
+/* line 103, _layout.scss */
 header h1, header h2, header p {
   max-width: 28.88889em;
   margin: 0.55556rem auto;
   padding: 0 5.55556rem;
 }
 
-/* line 119, _layout.scss */
+/* line 110, _layout.scss */
 .full-page {
   height: 100%;
   width: 100%;
 }
 
-/* line 124, _layout.scss */
+/* line 115, _layout.scss */
 main.inner-side {
   max-width: 28.88889em;
   padding: 5.55556em 0;
   margin: 0 inherit;
   margin: 0 5.55556rem;
 }
-/* line 130, _layout.scss */
+/* line 121, _layout.scss */
 main.inner-side h1, main.inner-side h2, main.inner-side p {
   text-align: left;
   margin: 0;
 }
 
-/* line 136, _layout.scss */
+/* line 127, _layout.scss */
 main.white-background {
   z-index: 10;
   position: relative;
@@ -753,25 +744,25 @@ main.white-background {
   padding: 1.11111em 0;
 }
 
-/* line 144, _layout.scss */
+/* line 135, _layout.scss */
 footer {
   padding-top: 2.22222em;
 }
-/* line 147, _layout.scss */
+/* line 138, _layout.scss */
 footer .avatar {
   float: left;
   border-radius: 50%;
   margin-right: 1.11111em;
 }
 
-/* line 154, _layout.scss */
+/* line 145, _layout.scss */
 .inner {
   max-width: 30em;
   padding: 0 0.55556em;
   margin: 0 auto;
 }
 
-/* line 160, _layout.scss */
+/* line 151, _layout.scss */
 section, .section {
   padding-bottom: 3.33333em;
   margin-top: 3.33333em;
@@ -779,44 +770,44 @@ section, .section {
   border-bottom: 0.125em solid #ecf0f1;
 }
 
-/* line 167, _layout.scss */
+/* line 158, _layout.scss */
 section:last-of-type, .ssection:last-of-type {
   border-bottom: none;
 }
 
-/* line 171, _layout.scss */
+/* line 162, _layout.scss */
 article {
   margin: 1.66667em 0;
   border-bottom: 0.125em solid #ecf0f1;
   padding-bottom: 0.55556em;
 }
-/* line 176, _layout.scss */
+/* line 167, _layout.scss */
 article h3 {
   margin-bottom: 0;
 }
-/* line 180, _layout.scss */
+/* line 171, _layout.scss */
 article h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 185, _layout.scss */
+/* line 176, _layout.scss */
 article p {
   margin-top: 0.55556em;
 }
 
-/* line 190, _layout.scss */
+/* line 181, _layout.scss */
 article:last-of-type {
   border-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 195, _layout.scss */
+/* line 186, _layout.scss */
 figure.img-side {
   display: inline-block;
   margin: 0;
   clear: both;
 }
-/* line 201, _layout.scss */
+/* line 192, _layout.scss */
 figure.img-side img {
   width: 8.88889em;
   float: left;
@@ -824,31 +815,31 @@ figure.img-side img {
   margin-bottom: 1.66667em;
 }
 
-/* line 209, _layout.scss */
+/* line 200, _layout.scss */
 figure.img-side:first-of-type {
   margin-top: 1.11111em;
 }
 
-/* line 213, _layout.scss */
+/* line 204, _layout.scss */
 figure.img-side:last-of-type img {
   margin-bottom: 1.66667em;
 }
 
-/* line 217, _layout.scss */
+/* line 208, _layout.scss */
 figure.img-bottom {
   margin: 0;
 }
-/* line 219, _layout.scss */
+/* line 210, _layout.scss */
 figure.img-bottom img {
   width: 100%;
 }
 
-/* line 225, _layout.scss */
+/* line 216, _layout.scss */
 .vertical-align-parent {
   display: table;
 }
 
-/* line 229, _layout.scss */
+/* line 220, _layout.scss */
 .vertical-align {
   display: table-cell;
   vertical-align: middle;
@@ -1004,30 +995,24 @@ button:hover, .button:hover, .button:focus {
   nav li:last-of-type {
     margin-right: 0;
   }
-  /* line 18, _media-queries.scss */
-  nav .active:before {
-    position: absolute;
-    left: -15px;
-    top: 5px;
-  }
 
-  /* line 25, _media-queries.scss */
+  /* line 19, _media-queries.scss */
   header.vertical-align-parent {
     padding: 3.88889em 0;
   }
 
-  /* line 30, _media-queries.scss */
+  /* line 24, _media-queries.scss */
   header h1, header h2, header p {
     padding: 0;
   }
 
-  /* line 34, _media-queries.scss */
+  /* line 28, _media-queries.scss */
   h1 {
     font-size: 2.25rem;
     line-height: 3.125rem;
   }
 
-  /* line 39, _media-queries.scss */
+  /* line 33, _media-queries.scss */
   main.inner-side {
     max-width: 30em;
     padding-left: 0.55556em;
@@ -1036,38 +1021,38 @@ button:hover, .button:hover, .button:focus {
   }
 }
 @media (max-width: 480px) {
-  /* line 50, _media-queries.scss */
+  /* line 44, _media-queries.scss */
   nav {
     position: static;
     width: 11.11111em;
     margin: 0 auto;
   }
-  /* line 55, _media-queries.scss */
+  /* line 49, _media-queries.scss */
   nav li {
     line-height: 2rem;
   }
-  /* line 59, _media-queries.scss */
+  /* line 53, _media-queries.scss */
   nav li:nth-of-type(2), nav li:nth-of-type(4) {
     margin-right: 0;
   }
 
-  /* line 64, _media-queries.scss */
+  /* line 58, _media-queries.scss */
   main.inner-side {
     padding-top: 2.22222em;
   }
 
-  /* line 68, _media-queries.scss */
+  /* line 62, _media-queries.scss */
   header.vertical-align-parent {
     padding-top: 2.22222em;
   }
 
-  /* line 72, _media-queries.scss */
+  /* line 66, _media-queries.scss */
   nav .blog-title {
     width: 100%;
     text-align: center;
   }
 
-  /* line 77, _media-queries.scss */
+  /* line 71, _media-queries.scss */
   nav ul {
     margin: 0 auto;
     float: none;
@@ -1075,7 +1060,7 @@ button:hover, .button:hover, .button:focus {
   }
 }
 @media (max-height: 480px) {
-  /* line 88, _media-queries.scss */
+  /* line 82, _media-queries.scss */
   header {
     height: auto;
     padding: 2.77778rem 0;

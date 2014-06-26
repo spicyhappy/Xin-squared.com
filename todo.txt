@@ -3,20 +3,15 @@ Next goal: finish prototype
 
 //// ON FIRE ////
 
-- fonts working
 - IE 9+
 - Chrome
 - Firefox
 - iPhone
-	- photo cover not working
-	- navigation stacks weird
-	- weird black bar
-	- low res images
+	- low res author image
 	- full width side captions, footer
 	- h2 resume caption
 	- local nav
 - Android
-- iPad
 
 
 //// QUICK FIXES ////
@@ -24,5 +19,8 @@ Next goal: finish prototype
 
 
 //// NICE TO HAVE ////
-
-- preload all images
+- weird resizes when moving to a new page
+- on iphone, header comes too low
+- thinner fonts on safari, iphone, ipad. No idea why. Probably should contact typekit support
+- font flash on iPhone, .wf-loading doesn't seem to work
+- small caps not working
