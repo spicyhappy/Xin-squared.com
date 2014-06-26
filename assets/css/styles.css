@@ -750,19 +750,20 @@ footer {
 }
 /* line 138, _layout.scss */
 footer .avatar {
+  width: 5.55556em;
   float: left;
   border-radius: 50%;
   margin-right: 1.11111em;
 }
 
-/* line 145, _layout.scss */
+/* line 146, _layout.scss */
 .inner {
   max-width: 30em;
   padding: 0 0.55556em;
   margin: 0 auto;
 }
 
-/* line 151, _layout.scss */
+/* line 152, _layout.scss */
 section, .section {
   padding-bottom: 3.33333em;
   margin-top: 3.33333em;
@@ -770,44 +771,44 @@ section, .section {
   border-bottom: 0.125em solid #ecf0f1;
 }
 
-/* line 158, _layout.scss */
+/* line 159, _layout.scss */
 section:last-of-type, .ssection:last-of-type {
   border-bottom: none;
 }
 
-/* line 162, _layout.scss */
+/* line 163, _layout.scss */
 article {
   margin: 1.66667em 0;
   border-bottom: 0.125em solid #ecf0f1;
   padding-bottom: 0.55556em;
 }
-/* line 167, _layout.scss */
+/* line 168, _layout.scss */
 article h3 {
   margin-bottom: 0;
 }
-/* line 171, _layout.scss */
+/* line 172, _layout.scss */
 article h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 176, _layout.scss */
+/* line 177, _layout.scss */
 article p {
   margin-top: 0.55556em;
 }
 
-/* line 181, _layout.scss */
+/* line 182, _layout.scss */
 article:last-of-type {
   border-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 186, _layout.scss */
+/* line 187, _layout.scss */
 figure.img-side {
   display: inline-block;
   margin: 0;
   clear: both;
 }
-/* line 192, _layout.scss */
+/* line 193, _layout.scss */
 figure.img-side img {
   width: 8.88889em;
   float: left;
@@ -815,31 +816,31 @@ figure.img-side img {
   margin-bottom: 1.66667em;
 }
 
-/* line 200, _layout.scss */
+/* line 201, _layout.scss */
 figure.img-side:first-of-type {
   margin-top: 1.11111em;
 }
 
-/* line 204, _layout.scss */
+/* line 205, _layout.scss */
 figure.img-side:last-of-type img {
   margin-bottom: 1.66667em;
 }
 
-/* line 208, _layout.scss */
+/* line 209, _layout.scss */
 figure.img-bottom {
   margin: 0;
 }
-/* line 210, _layout.scss */
+/* line 211, _layout.scss */
 figure.img-bottom img {
   width: 100%;
 }
 
-/* line 216, _layout.scss */
+/* line 217, _layout.scss */
 .vertical-align-parent {
   display: table;
 }
 
-/* line 220, _layout.scss */
+/* line 221, _layout.scss */
 .vertical-align {
   display: table-cell;
   vertical-align: middle;
@@ -1079,9 +1080,14 @@ button:hover, .button:hover, .button:focus {
   footer .avatar {
     float: none;
   }
+
+  /* line 94, _media-queries.scss */
+  .small-caps {
+    font-size: 0.875rem;
+  }
 }
 @media (max-height: 480px) {
-  /* line 99, _media-queries.scss */
+  /* line 103, _media-queries.scss */
   header {
     height: auto;
     padding: 2.77778rem 0;
