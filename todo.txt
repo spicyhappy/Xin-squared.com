@@ -8,11 +8,8 @@ Next goal: finish prototype
 - Firefox
 - iPhone
 	- low res author image
-	- full width side captions, footer
-	- h2 resume caption
-	- local nav
 - Android
-
+- backup when fonts aren't loaded
 
 //// QUICK FIXES ////
 
