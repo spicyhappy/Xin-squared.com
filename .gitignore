@@ -1,5 +1,8 @@
 # Ignore everything first
 /*
+.sass-cache
+.sass-cache/*
+
 
 # Then un-ignore the following
 !.gitignore
