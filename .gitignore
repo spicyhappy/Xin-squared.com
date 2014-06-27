@@ -1,0 +1,26 @@
+# Ignore everything first
+/*
+
+# Then un-ignore the following
+!.gitignore
+
+# Content files
+content/*
+!/content/
+!/content/*
+
+# Mac files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
