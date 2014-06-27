@@ -656,22 +656,26 @@ nav ul {
   pointer-events: visible;
 }
 /* line 47, _layout.scss */
+nav ul li {
+  line-height: 2.5rem;
+}
+/* line 51, _layout.scss */
 nav ul a {
   opacity: 0.5;
   position: relative;
 }
-/* line 52, _layout.scss */
+/* line 56, _layout.scss */
 nav ul a:hover, nav ul .active {
   opacity: 1;
 }
-/* line 56, _layout.scss */
+/* line 60, _layout.scss */
 nav ul .active {
   pointer-events: none;
   cursor: default;
   border-bottom: 0.125em solid #ecf0f1;
 }
 
-/* line 64, _layout.scss */
+/* line 68, _layout.scss */
 .local-nav {
   border-top: 0.25em solid rgba(236, 240, 241, 0.3);
   list-style: none;
@@ -680,7 +684,7 @@ nav ul .active {
   margin-top: 4.44444em;
   padding: 0;
 }
-/* line 72, _layout.scss */
+/* line 76, _layout.scss */
 .local-nav li {
   display: inline-block;
   margin-top: -0.22222em;
@@ -688,54 +692,54 @@ nav ul .active {
   line-height: 50px;
   padding: 0 0.55556em;
 }
-/* line 81, _layout.scss */
+/* line 85, _layout.scss */
 .local-nav li a {
   opacity: 0.5;
 }
-/* line 85, _layout.scss */
+/* line 89, _layout.scss */
 .local-nav .active a, .local-nav li a:hover {
   opacity: 1;
 }
-/* line 90, _layout.scss */
+/* line 94, _layout.scss */
 .local-nav .active {
   pointer-events: none;
   cursor: default;
   border-top: 0.25em solid #ecf0f1;
 }
 
-/* line 97, _layout.scss */
+/* line 101, _layout.scss */
 header {
   height: 60%;
   max-height: 27.77778em;
   width: 100%;
 }
-/* line 103, _layout.scss */
+/* line 107, _layout.scss */
 header h1, header h2, header p {
   max-width: 28.88889em;
   margin: 0.55556rem auto;
   padding: 0 5.55556rem;
 }
 
-/* line 110, _layout.scss */
+/* line 114, _layout.scss */
 .full-page {
   height: 100%;
   width: 100%;
 }
 
-/* line 115, _layout.scss */
+/* line 119, _layout.scss */
 main.inner-side {
   max-width: 28.88889em;
   padding: 5.55556em 0;
   margin: 0 inherit;
   margin: 0 5.55556rem;
 }
-/* line 121, _layout.scss */
+/* line 125, _layout.scss */
 main.inner-side h1, main.inner-side h2, main.inner-side p {
   text-align: left;
   margin: 0;
 }
 
-/* line 127, _layout.scss */
+/* line 131, _layout.scss */
 main.white-background {
   z-index: 10;
   position: relative;
@@ -744,11 +748,11 @@ main.white-background {
   padding: 1.11111em 0;
 }
 
-/* line 135, _layout.scss */
+/* line 139, _layout.scss */
 footer {
   padding-top: 2.22222em;
 }
-/* line 138, _layout.scss */
+/* line 142, _layout.scss */
 footer .avatar {
   width: 5.55556em;
   float: left;
@@ -756,14 +760,14 @@ footer .avatar {
   margin-right: 1.11111em;
 }
 
-/* line 146, _layout.scss */
+/* line 150, _layout.scss */
 .inner {
   max-width: 30em;
   padding: 0 0.55556em;
   margin: 0 auto;
 }
 
-/* line 152, _layout.scss */
+/* line 156, _layout.scss */
 section, .section {
   padding-bottom: 3.33333em;
   margin-top: 3.33333em;
@@ -771,44 +775,44 @@ section, .section {
   border-bottom: 0.125em solid #ecf0f1;
 }
 
-/* line 159, _layout.scss */
+/* line 163, _layout.scss */
 section:last-of-type, .ssection:last-of-type {
   border-bottom: none;
 }
 
-/* line 163, _layout.scss */
+/* line 167, _layout.scss */
 article {
   margin: 1.66667em 0;
   border-bottom: 0.125em solid #ecf0f1;
   padding-bottom: 0.55556em;
 }
-/* line 168, _layout.scss */
+/* line 172, _layout.scss */
 article h3 {
   margin-bottom: 0;
 }
-/* line 172, _layout.scss */
+/* line 176, _layout.scss */
 article h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 177, _layout.scss */
+/* line 181, _layout.scss */
 article p {
   margin-top: 0.55556em;
 }
 
-/* line 182, _layout.scss */
+/* line 186, _layout.scss */
 article:last-of-type {
   border-bottom: 0;
   padding-bottom: 0;
 }
 
-/* line 187, _layout.scss */
+/* line 191, _layout.scss */
 figure.img-side {
   display: inline-block;
   margin: 0;
   clear: both;
 }
-/* line 193, _layout.scss */
+/* line 197, _layout.scss */
 figure.img-side img {
   width: 8.88889em;
   float: left;
@@ -816,31 +820,31 @@ figure.img-side img {
   margin-bottom: 1.66667em;
 }
 
-/* line 201, _layout.scss */
+/* line 205, _layout.scss */
 figure.img-side:first-of-type {
   margin-top: 1.11111em;
 }
 
-/* line 205, _layout.scss */
+/* line 209, _layout.scss */
 figure.img-side:last-of-type img {
   margin-bottom: 1.66667em;
 }
 
-/* line 209, _layout.scss */
+/* line 213, _layout.scss */
 figure.img-bottom {
   margin: 0;
 }
-/* line 211, _layout.scss */
+/* line 215, _layout.scss */
 figure.img-bottom img {
   width: 100%;
 }
 
-/* line 217, _layout.scss */
+/* line 221, _layout.scss */
 .vertical-align-parent {
   display: table;
 }
 
-/* line 221, _layout.scss */
+/* line 225, _layout.scss */
 .vertical-align {
   display: table-cell;
   vertical-align: middle;
@@ -855,9 +859,10 @@ body {
   font-weight: 400;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* line 14, _typography.scss */
+/* line 15, _typography.scss */
 .small-caps {
   font-style: normal;
   font-size: 1.125rem;
@@ -870,7 +875,7 @@ body {
   font-feature-settings: 'c2sc';
 }
 
-/* line 26, _typography.scss */
+/* line 27, _typography.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 400;
   font-style: italic;
@@ -881,60 +886,60 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-feature-settings: 'c2sc';
 }
 
-/* line 36, _typography.scss */
+/* line 37, _typography.scss */
 h1, .h1 {
   font-size: 2.9375rem;
   line-height: 3.6875rem;
 }
 
-/* line 41, _typography.scss */
+/* line 42, _typography.scss */
 h2, .h2 {
   font-size: 1.8125rem;
   line-height: 2.5rem;
 }
 
-/* line 46, _typography.scss */
+/* line 47, _typography.scss */
 h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 1.375rem;
   line-height: 1.875rem;
 }
 
-/* line 51, _typography.scss */
+/* line 52, _typography.scss */
 blockquote {
   font-style: italic;
   text-align: center;
 }
-/* line 55, _typography.scss */
+/* line 56, _typography.scss */
 blockquote div:before {
   content: '\201C';
 }
-/* line 58, _typography.scss */
+/* line 59, _typography.scss */
 blockquote div:after {
   content: '\201D';
 }
-/* line 61, _typography.scss */
+/* line 62, _typography.scss */
 blockquote cite:before {
   content: '\2014\2002';
 }
 
-/* line 66, _typography.scss */
+/* line 67, _typography.scss */
 .small {
   font-size: 0.875rem;
   line-height: 1.875rem;
 }
 
-/* line 71, _typography.scss */
+/* line 72, _typography.scss */
 a, a:visited {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 76, _typography.scss */
+/* line 77, _typography.scss */
 p a, figcaption > a {
   text-decoration: underline;
 }
 
-/* line 80, _typography.scss */
+/* line 81, _typography.scss */
 a:hover {
   color: #ff4a40;
 }
