@@ -847,14 +847,9 @@ figure.img-bottom img {
   text-align: center;
 }
 
-/* line 4, _typography.scss */
-.wf-loading body {
-  visibility: hidden;
-}
-
-/* line 10, _typography.scss */
+/* line 5, _typography.scss */
 body {
-  font-family: "Adelle Regular", "adelle", georgia, serif;
+  font-family: "adelle", georgia, serif;
   font-size: 1.125rem;
   line-height: 1.875rem;
   font-weight: 400;
@@ -862,7 +857,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* line 19, _typography.scss */
+/* line 14, _typography.scss */
 .small-caps {
   font-style: normal;
   font-size: 1.125rem;
@@ -875,7 +870,7 @@ body {
   font-feature-settings: 'c2sc';
 }
 
-/* line 31, _typography.scss */
+/* line 26, _typography.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 400;
   font-style: italic;
@@ -886,60 +881,60 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-feature-settings: 'c2sc';
 }
 
-/* line 41, _typography.scss */
+/* line 36, _typography.scss */
 h1, .h1 {
   font-size: 2.9375rem;
   line-height: 3.6875rem;
 }
 
-/* line 46, _typography.scss */
+/* line 41, _typography.scss */
 h2, .h2 {
   font-size: 1.8125rem;
   line-height: 2.5rem;
 }
 
-/* line 51, _typography.scss */
+/* line 46, _typography.scss */
 h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 1.375rem;
   line-height: 1.875rem;
 }
 
-/* line 56, _typography.scss */
+/* line 51, _typography.scss */
 blockquote {
   font-style: italic;
   text-align: center;
 }
-/* line 60, _typography.scss */
+/* line 55, _typography.scss */
 blockquote div:before {
   content: '\201C';
 }
-/* line 63, _typography.scss */
+/* line 58, _typography.scss */
 blockquote div:after {
   content: '\201D';
 }
-/* line 66, _typography.scss */
+/* line 61, _typography.scss */
 blockquote cite:before {
   content: '\2014\2002';
 }
 
-/* line 71, _typography.scss */
+/* line 66, _typography.scss */
 .small {
   font-size: 0.875rem;
   line-height: 1.875rem;
 }
 
-/* line 76, _typography.scss */
+/* line 71, _typography.scss */
 a, a:visited {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 81, _typography.scss */
+/* line 76, _typography.scss */
 p a, figcaption > a {
   text-decoration: underline;
 }
 
-/* line 85, _typography.scss */
+/* line 80, _typography.scss */
 a:hover {
   color: #ff4a40;
 }
@@ -1009,7 +1004,7 @@ button:hover, .button:hover, .button:focus {
   }
 
   /* line 28, _media-queries.scss */
-  h1 {
+  h1, .h1 {
     font-size: 2.25rem;
     line-height: 3.125rem;
   }
@@ -1023,71 +1018,89 @@ button:hover, .button:hover, .button:focus {
   }
 }
 @media (max-width: 480px) {
-  /* line 44, _media-queries.scss */
+  /* line 43, _media-queries.scss */
+  body {
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+  }
+
+  /* line 48, _media-queries.scss */
+  h2, .h2 {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+
+  /* line 53, _media-queries.scss */
+  h3, .h3 {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+
+  /* line 58, _media-queries.scss */
   nav {
     position: static;
     width: 11.11111em;
     margin: 0 auto;
   }
-  /* line 49, _media-queries.scss */
+  /* line 63, _media-queries.scss */
   nav li {
     line-height: 2rem;
   }
-  /* line 53, _media-queries.scss */
+  /* line 67, _media-queries.scss */
   nav li:nth-of-type(2), nav li:nth-of-type(4) {
     margin-right: 0;
   }
 
-  /* line 58, _media-queries.scss */
+  /* line 72, _media-queries.scss */
   main.inner-side {
     padding-top: 2.22222em;
   }
 
-  /* line 62, _media-queries.scss */
+  /* line 76, _media-queries.scss */
   header.vertical-align-parent {
     padding-top: 2.22222em;
   }
 
-  /* line 66, _media-queries.scss */
+  /* line 80, _media-queries.scss */
   nav .blog-title {
     width: 100%;
     text-align: center;
   }
 
-  /* line 71, _media-queries.scss */
+  /* line 85, _media-queries.scss */
   nav ul {
     margin: 0 auto;
     float: none;
     text-align: center;
   }
 
-  /* line 77, _media-queries.scss */
+  /* line 91, _media-queries.scss */
   figure.img-side {
     margin-bottom: 2.22222em;
   }
-  /* line 79, _media-queries.scss */
+  /* line 93, _media-queries.scss */
   figure.img-side img {
     width: 100%;
     margin: 0;
     margin-bottom: 0.55556em;
   }
 
-  /* line 86, _media-queries.scss */
+  /* line 100, _media-queries.scss */
   footer {
     text-align: center;
   }
-  /* line 89, _media-queries.scss */
+  /* line 103, _media-queries.scss */
   footer .avatar {
     float: none;
   }
 
-  /* line 94, _media-queries.scss */
+  /* line 108, _media-queries.scss */
   .small-caps {
     font-size: 0.875rem;
   }
 }
 @media (max-height: 480px) {
-  /* line 103, _media-queries.scss */
+  /* line 117, _media-queries.scss */
   header {
     height: auto;
     padding: 2.77778rem 0;
