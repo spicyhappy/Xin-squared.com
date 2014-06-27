@@ -1037,70 +1037,76 @@ button:hover, .button:hover, .button:focus {
   }
 
   /* line 58, _media-queries.scss */
+  button, .button {
+    font-size: 0.875rem;
+    line-height: 1.875rem;
+  }
+
+  /* line 63, _media-queries.scss */
   nav {
     position: static;
     width: 11.11111em;
     margin: 0 auto;
   }
-  /* line 63, _media-queries.scss */
+  /* line 68, _media-queries.scss */
   nav li {
     line-height: 2rem;
   }
-  /* line 67, _media-queries.scss */
+  /* line 72, _media-queries.scss */
   nav li:nth-of-type(2), nav li:nth-of-type(4) {
     margin-right: 0;
   }
 
-  /* line 72, _media-queries.scss */
+  /* line 77, _media-queries.scss */
   main.inner-side {
     padding-top: 2.22222em;
   }
 
-  /* line 76, _media-queries.scss */
+  /* line 81, _media-queries.scss */
   header.vertical-align-parent {
     padding-top: 2.22222em;
   }
 
-  /* line 80, _media-queries.scss */
+  /* line 85, _media-queries.scss */
   nav .blog-title {
     width: 100%;
     text-align: center;
   }
 
-  /* line 85, _media-queries.scss */
+  /* line 90, _media-queries.scss */
   nav ul {
     margin: 0 auto;
     float: none;
     text-align: center;
   }
 
-  /* line 91, _media-queries.scss */
+  /* line 96, _media-queries.scss */
   figure.img-side {
     margin-bottom: 2.22222em;
   }
-  /* line 93, _media-queries.scss */
+  /* line 98, _media-queries.scss */
   figure.img-side img {
     width: 100%;
     margin: 0;
     margin-bottom: 0.55556em;
   }
 
-  /* line 100, _media-queries.scss */
+  /* line 105, _media-queries.scss */
   footer {
     text-align: center;
   }
-  /* line 103, _media-queries.scss */
+  /* line 108, _media-queries.scss */
   footer .avatar {
     float: none;
   }
 
-  /* line 108, _media-queries.scss */
+  /* line 113, _media-queries.scss */
   .small-caps {
     font-size: 0.875rem;
   }
 }
 @media (max-height: 480px) {
-  /* line 117, _media-queries.scss */
+  /* line 122, _media-queries.scss */
   header {
     height: auto;
     padding: 2.77778rem 0;
