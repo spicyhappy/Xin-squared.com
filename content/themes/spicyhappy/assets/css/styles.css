@@ -674,7 +674,7 @@ figure.img-bottom img {
 }
 
 /* line 227, _layout.scss */
-img[alt="img-background"] {
+img[alt="img-background"], .img-background-parent {
   display: none;
 }
 
@@ -972,4 +972,9 @@ button:hover, .button:hover, .button:focus {
 /* line 11, styles.scss */
 .page-template-about footer {
   display: none;
+}
+
+/* line 16, styles.scss */
+.page-template-work main {
+  background-color: rgba(17, 17, 17, 0.4);
 }

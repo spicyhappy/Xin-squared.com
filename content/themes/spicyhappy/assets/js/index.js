@@ -59,7 +59,6 @@
 })(jQuery,'smartresize');
 
 // Based off a workaround https://ghost.org/forum/plugins/239-plugin-idea-add-cover-image-to-a-post/?page=2
-
 $(document).ready(function(){
     var imgBackground = $('img[alt="img-background"]');
 
