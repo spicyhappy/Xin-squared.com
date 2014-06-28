@@ -1,0 +1,35 @@
+@import 'variables';
+
+button, .button {
+	background-color: rgba($red, $button-opacity);
+	color: white;
+	line-height: (40/16) + em;
+	height: (40/16) + em;
+	border: 0;
+	outline: 0;
+	white-space: nowrap;
+	display: inline-block;
+	padding: 0 (18/16) + em;
+	padding-top: (1/16) + em;
+	font-size: (14/16) + em;
+	text-transform: uppercase;
+	letter-spacing: (1.5/16) + em;
+	-moz-font-feature-settings: 'c2sc', 'smcp';
+	-webkit-font-feature-settings: 'c2sc', 'smcp';
+	-ms-font-feature-settings: 'c2sc', 'smcp';
+	font-feature-settings: 'c2sc', 'smcp';
+	text-decoration: none;
+	-webkit-border-radius: 999em;
+	-moz-border-radius: 999em;
+	border-radius: 999em;
+	margin-right: (16/16) + em;
+}
+
+button:last-of-type, .button:last-of-type {
+	margin-right: 0;
+}
+
+button:hover, .button:hover, .button:focus {
+	background-color: rgba($red, $button-opacity-hover);
+	color: white;
+}

@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {{! Document Settings }}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
-
     <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
 
-    {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+    {{! Typekit }}
+    <script type="text/javascript">(function(e){var t={kitId:"eez2ozc",scriptTimeout:3e3},n=e.documentElement,r=setTimeout(function(){n.className=n.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},t.scriptTimeout),i=e.createElement("script"),s=false,o=e.getElementsByTagName("script")[0],u;n.className+=" wf-loading";i.src="//use.typekit.net/"+t.kitId+".js";i.async=true;i.onload=i.onreadystatechange=function(){u=this.readyState;if(s||u&&u!="complete"&&u!="loaded")return;s=true;clearTimeout(r);try{Typekit.load(t)}catch(e){}};o.parentNode.insertBefore(i,o)})(document)
+    </script>
+
+    {{! Google Analytics }}
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+    (function(e,t,n,r,i,s,o){e["GoogleAnalyticsObject"]=i;e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},e[i].l=1*new Date;s=t.createElement(n),o=t.getElementsByTagName(n)[0];s.async=1;s.src=r;o.parentNode.insertBefore(s,o)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-21156824-4","xin-squared.com");ga("send","pageview")
+    </script>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
+
 <body class="{{body_class}}">
+    <nav>
+        <a class="blog-title small-caps h2" href="{{@blog.url}}">X2</a>
+        <ul class="small-caps">
+            <li><a href="/about">About</a></li>
+            <li><a href="/work">Work</a></li>
+            <li><a href="/tag/all">Blog</a></li>
+            <li><a href="/resume">Resume</a></li>
+        </ul>
+    </nav>
 
     {{! Everything else gets inserted here }}
     {{{body}}}
 
-    <footer class="site-footer">
-        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+    <footer class="full-page">
         <div class="inner">
-             <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a></section>
+            <img class="avatar" src="{{asset "images/XinXin.jpg"}}">
+            <p>Xin Xin leads design at Panjiva. Drop me a line!</p>
+            <a href="https://twitter.com/xinsq" class="button">Xinsq</a><a href="mailto:xin@xin-squared.com" class="button">Email</a>
         </div>
     </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
+    {{! ghost_foot}}
 
-    {{! The main JavaScript file for Casper }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
 
 </body>
 </html>

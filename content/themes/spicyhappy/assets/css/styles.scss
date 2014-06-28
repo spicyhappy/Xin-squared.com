@@ -1,0 +1,14 @@
+@import 'variables', 'reset', 'layout', 'typography', 'forms', 'media-queries';
+
+// Page specific
+.page-template-about {
+	background-color: rgba($black, .4);
+	
+	#dropmealine {
+		padding-bottom: (10/18) + em;
+	}
+
+	footer {
+		display: none;
+	}
+}

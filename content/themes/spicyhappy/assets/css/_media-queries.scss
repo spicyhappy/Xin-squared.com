@@ -1,0 +1,140 @@
+@media (max-width: 800px) {
+	nav {
+		position: absolute;
+		padding: (10/18) + em (10/18) + em 0 (10/18) + em;
+
+		ul {
+			min-width: (360/18) + em;
+		}
+
+		li {
+			display: inline-block;
+			margin-right: (20/18) + em;
+			line-height: 2.5rem;
+		}
+
+		li:last-of-type {
+			margin-right: 0;
+		}
+	}
+
+	header.vertical-align-parent {
+		padding: (70/18) + em 0;
+
+	}
+
+	header h1, header h2, header p {
+		padding: 0;
+	}
+
+	h1, .h1 {
+		font-size: (36/16) + rem;
+		line-height: (50/16) + rem;
+	}
+
+	main .inner-side {
+		max-width: (540/18) + em;
+		padding-left: (10/18) + em;
+		padding-right: (10/18) + em;
+		margin: 0 auto;
+
+		h1, h2 {
+			text-align: center;
+		}
+	}
+
+	.button-group {
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+
+	body {
+		font-size: (18/16) + rem;
+		line-height: (30/16) + rem;
+	}
+
+	h2, .h2 {
+		font-size: (22/16) + rem;
+		line-height: (30/16) + rem;
+	}
+
+	h3, .h3 {
+		font-size: (18/16) + rem;
+		line-height: (30/16) + rem;
+	}
+
+	button, .button {
+		font-size: (14/16) + rem;
+		line-height: (30/16) + rem;
+		height: (30/16) + rem;
+	}
+
+	nav {
+		margin: 0 auto;
+		
+		ul {
+			min-width: 0;
+			width: (190/18) + em;
+		}
+
+		li {
+			line-height: 2rem;
+		}
+
+		li:nth-of-type(2), li:nth-of-type(4) {
+			margin-right: 0;
+		}
+	}
+
+	main .inner-side {
+		padding-top: (140/18) + em;
+	}
+
+	header.vertical-align-parent {
+		padding-top: (40/18) + em;
+	}
+
+	nav .blog-title {
+		width: 100%;
+		text-align: center;
+	}
+
+	nav ul {
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+	}
+
+	figure.img-side {
+		margin-bottom: (40/18) + em;
+		img {
+			width: 100%;
+			margin: 0;
+			margin-bottom: (10/18) + em;
+		}
+	}
+
+	footer {
+		text-align: center;
+
+		.avatar {
+			float: none;
+		}
+	}
+
+	.small-caps {
+		font-size: (14/16) + rem;
+	}
+}
+
+
+// Account for vertical % on headers
+
+@media (max-height: 480px) {
+	header {
+		height: auto;
+		padding: (50/18) + rem 0;
+	}
+}
