@@ -1,12 +1,12 @@
-
-Next goal: launch, fix issues and add more projects
-
-
 Now
-- Browser testing: IE 9+, Chrome, Firefox, Android
-
+- browser testing: IE 9+, Chrome, Firefox, Android
+- more content
+- auto restart ghost on push
 
 Nice to have
+- auto-save to production database
+- unique images on top of each blog posts
+- iOS bottom bar still has weirdnesses
 - button icons
 - resume pdf
 - backup when fonts aren't loaded
@@ -15,5 +15,3 @@ Nice to have
 - small caps not working
 - prevent from attacks
 - 404 error page
-- about page - extra unshaded portion on bottom when full screen
-- headers for each blog article
