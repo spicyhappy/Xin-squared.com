@@ -1,0 +1,19 @@
+
+Next goal: launch, fix issues and add more projects
+
+
+Now
+- Browser testing: IE 9+, Chrome, Firefox, Android
+
+
+Nice to have
+- button icons
+- resume pdf
+- backup when fonts aren't loaded
+- weird resizes when moving to a new page
+- font flash on iPhone, .wf-loading doesn't seem to work
+- small caps not working
+- prevent from attacks
+- 404 error page
+- about page - extra unshaded portion on bottom when full screen
+- headers for each blog article

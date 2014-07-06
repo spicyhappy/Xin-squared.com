@@ -6,6 +6,8 @@
 
 # Then un-ignore the following
 !.gitignore
+!todo.txt
+!README.md
 
 # Content files
 content/*
