@@ -67,6 +67,23 @@ $(document).ready(function(){
     }
 
     else {
-      $.backstretch("/assets/images/XinXin-White-Mountains01.jpg");
+      $.backstretch('/assets/images/XinXin-White-Mountains01.jpg');
     }
+
+    $('.gallery').each(function() { // the containers for all your galleries
+        $(this).magnificPopup({
+            delegate: 'a', // the selector for gallery item
+            type: 'image',
+            gallery: {
+              enabled:true,
+              navigateByImgClick: true,
+            },
+            disableOn: function() {
+              if( $(window).width() < 600 ) {
+                return false;
+              } 
+              return true;
+            }
+        });
+    }); 
 });

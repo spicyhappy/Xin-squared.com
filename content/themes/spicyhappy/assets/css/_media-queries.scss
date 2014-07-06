@@ -133,8 +133,7 @@
 // Account for vertical % on headers
 
 @media (max-height: 480px) {
-	header {
-		height: auto;
-		padding: (50/18) + rem 0;
+	header,  header.vertical-align-parent {
+		padding-top: (150/18) + em;
 	}
 }

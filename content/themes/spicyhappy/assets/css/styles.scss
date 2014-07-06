@@ -1,8 +1,10 @@
-@import 'variables', 'reset', 'layout', 'typography', 'forms', 'media-queries';
+@import 'variables', 'reset', 'grid', 'layout', 'typography', 'forms', 'media-queries', 'slider';
 
 // Page specific
 .page-template-about {
-	background-color: rgba($black, .4);
+	main {
+		background-color: rgba($black, .4);
+	}
 	
 	#dropmealine {
 		padding-bottom: (10/18) + em;
@@ -15,4 +17,17 @@
 
 .page-template-work main {
 	background-color: rgba($black, .4);
+}
+
+.post-template section.share {
+	padding-bottom: 0;
+	
+	.button, button {
+		margin-right: (10/18) + em;
+		margin-bottom: (10/18) + em;
+	}
+
+	.button:last-of-type, button:last-of-type {
+		margin-right: 0;
+	}
 }
