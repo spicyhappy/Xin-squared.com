@@ -1,6 +1,6 @@
 # Spicyhappy
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+Xin Xin's custom theme for ghost.
 
 ## Copyright & License
 
