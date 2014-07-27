@@ -60,30 +60,40 @@
 
 // Based off a workaround https://ghost.org/forum/plugins/239-plugin-idea-add-cover-image-to-a-post/?page=2
 $(document).ready(function(){
-    var imgBackground = $('img[alt="img-background"]');
+  var imgBackground = $('img[alt="img-background"]');
 
-    if (imgBackground.length > 0) {
-      $.backstretch(imgBackground.attr('src'));
+  if (imgBackground.length > 0) {
+    $.backstretch(imgBackground.attr('src'));
+    $('.site-nav').css({"color":"white"});
+  }
+
+  else {
+    $.backstretch('/assets/images/XinXin-White-Mountains01.jpg');
+  }
+
+  var projects = [
+    '/assets/images/XinXin-BackgroundBlue.jpg',
+    '/assets/images/XinXin-Panjiva.jpg',
+    '/assets/images/XinXin-BlackHat.jpg',
+    '/assets/images/XinXin-mCent.jpg',
+    '/assets/images/XinXin-Squeezicks.jpg',
+    '/assets/images/XinXin-Medlert.jpg',
+    '/assets/images/XinXin-Icarus.jpg',
+    '/assets/images/XinXin-RetailProject.jpg',
+    '/assets/images/XinXin-RubiksCube03.jpg',
+    '/assets/images/XinXin-Sketch06.jpg'
+  ];
+
+  $('#projects tr').hover(function() {
+    number = $(this).attr('class');
+    $(this).css({'opacity':'50%'});
+    $('#projects .backstretch-canvas').backstretch([projects[number]], {speed: 1000});
+    $('#projects').css({"background-color":"#111111"});
+    $('#projects .backstretch').css({"opacity":".5", "filter":"alpha(opacity=60)"});
+  },
+    function() {
+      $('#projects').css({"background-color":"#15bded"});
+      $('#projects .backstretch-canvas').backstretch([projects[0]], {speed: 100});
     }
-
-    else {
-      $.backstretch('/assets/images/XinXin-White-Mountains01.jpg');
-    }
-
-    $('.gallery').each(function() { // the containers for all your galleries
-        $(this).magnificPopup({
-            delegate: 'a', // the selector for gallery item
-            type: 'image',
-            gallery: {
-              enabled:true,
-              navigateByImgClick: true,
-            },
-            disableOn: function() {
-              if( $(window).width() < 600 ) {
-                return false;
-              } 
-              return true;
-            }
-        });
-    }); 
+  );
 });

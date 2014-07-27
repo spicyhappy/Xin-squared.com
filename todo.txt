@@ -2,19 +2,11 @@ Now
 - browser testing: IE 9+, Chrome, Firefox, Android
 - more content
 - auto restart ghost on push
-- front page weird shift on images
 
 Nice to have
 - responsive youtube & wisia. Use http://wistia.com/doc/video-foam or wmode http://wistia.com/doc/embed-options
 - don't count self on google analytics
 - auto-save to production database
-- unique images on top of each blog posts
-- iOS bottom bar still has weirdnesses
-- button icons
 - resume pdf
-- backup when fonts aren't loaded
-- weird resizes when moving to a new page
-- font flash on iPhone, .wf-loading doesn't seem to work
-- small caps not working
 - prevent from attacks
 - 404 error page

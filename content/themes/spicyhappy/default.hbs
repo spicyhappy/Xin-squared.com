@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>{{meta_title}}</title>
+    <title>Xin Xin — {{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
@@ -11,8 +11,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
 
     {{! Typekit }}
-    <script type="text/javascript">(function(e){var t={kitId:"eez2ozc",scriptTimeout:3e3},n=e.documentElement,r=setTimeout(function(){n.className=n.className.replace(/\bwf-loading\b/g,"")+" wf-inactive"},t.scriptTimeout),i=e.createElement("script"),s=false,o=e.getElementsByTagName("script")[0],u;n.className+=" wf-loading";i.src="//use.typekit.net/"+t.kitId+".js";i.async=true;i.onload=i.onreadystatechange=function(){u=this.readyState;if(s||u&&u!="complete"&&u!="loaded")return;s=true;clearTimeout(r);try{Typekit.load(t)}catch(e){}};o.parentNode.insertBefore(i,o)})(document)
-    </script>
+    <script type="text/javascript" src="//use.typekit.net/eez2ozc.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     {{! Google Analytics }}
     <script async="" src="//www.google-analytics.com/analytics.js"></script><script>
@@ -24,25 +24,31 @@
 </head>
 
 <body class="{{body_class}}">
-    <nav>
-        <a class="blog-title small-caps h2" href="{{@blog.url}}">X2</a>
-        <ul class="small-caps">
-            <li><a href="/about">About</a></li>
-            <li><a href="/work">Work</a></li>
-            <li><a href="/tag/all">Blog</a></li>
-            <li><a href="/resume">Resume</a></li>
+   <nav class="site-nav">
+        <ul>
+            <a href="/"><li>Projects</li></a>&middot;<a href="/resume"><li>Resume</li></a>&middot;<a href="/about"><li>About</li></a>&middot;<a href="/tag/all"><li>Blog</li></a>
         </ul>
     </nav>
 
     {{! Everything else gets inserted here }}
     {{{body}}}
 
-    <footer class="full-page">
+    <footer>
         <div class="inner">
-            <img class="avatar" src="{{asset "images/XinXin.jpg"}}">
-            <p>Xin Xin leads design at Panjiva. Drop me a line!</p>
-            <a href="https://twitter.com/xinsq" class="button">@Xinsq</a><a href="mailto:xin@xin-squared.com" class="button">Email</a>
-        </div>
+            <p>Xin Xin makes things, asks questions, dreams big, eats very spicy Chinese food, and loves, loves, loves to learn.</p>
+            
+            <div class="contact-info">
+                <a class="button phone" href="tel:1-848-219-1491"><span class="icon icon-call"></span>&nbsp;<span class="detail">8482191491</span>&nbsp;</a>
+                <a class="button mail" href="mailto:xin@xin-squared.com"><span class="icon icon-email"></span>&nbsp;<span class="detail">Email</span>&nbsp;</a>
+                <a class="button twitter" href="https://twitter.com/xinsq/"><span class="icon icon-twitter"></span>&nbsp;<span class="detail">@xinsq</span>&nbsp;</a>
+                <a class="button linkedin" href="http://www.linkedin.com/in/xinsq/"><span class="icon icon-linkedin"></span>&nbsp;<span class="detail">LinkedIn</span>&nbsp;</a>
+            </div>
+
+            <nav class="footer-nav">
+                <ul>
+                    <a href="/"><li>Projects</li></a>&middot;<a href="/resume"><li>Resume</li></a>&middot;<a href="/about"><li>About</li></a>&middot;<a href="/tag/all"><li>Blog</li></a>
+                </ul>
+            </nav>
     </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
@@ -51,7 +57,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/jquery.magnific-popup.min.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 

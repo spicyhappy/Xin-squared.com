@@ -3,26 +3,12 @@
 {{! This is a page template. A page outputs content just like any other post, and has all the same
     attributes by default, but you can also customise it to behave differently if you prefer. }}
 
+<section id="resume">
+<div class="inner {{post_class}}">
 
-<header class="vertical-align-parent">
-    <div class="inner vertical-align">
-        <h1>Xin Xin</h1>
-        <h2 class="small-caps">848-219-1491 / xin@xin-squared.com</h2>
-        <br>
-        <p><a href="http://www.linkedin.com/in/xinsq/" class="button">LinkedIn</a> <a href="https://twitter.com/xinsq" class="button">@xinsq</a></p>
-    </div>
-</header>
-
-<main class="content white-background" role="main">
-<div class="inner">
-
-    <article class="{{post_class}}">
-
-        {{#post}}
-        {{content}}
-        {{/post}}
-
-    </article>
-
+    {{#post}}
+    {{content}}
+    {{/post}}
+    
 </div>
-</main>
+</section>

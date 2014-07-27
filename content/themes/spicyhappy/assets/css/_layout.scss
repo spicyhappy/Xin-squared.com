@@ -6,249 +6,164 @@
 	box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
-	color: white;
-}
-
 html {
-	background-color: $black;
 	overflow-y: scroll;
 }
 
-nav {
-	position: fixed;
-	padding: (30/18) + em (30/18) + em 0 (30/18) + em;
-	width: 100%;
-	z-index: $lower-zindex;
-	// Todo: support IE on this... http://stackoverflow.com/questions/3680429/click-through-a-div-to-underlying-elements
-	pointer-events: none;
-
-	.blog-title {
-		opacity: $text-opacity;
-		font-weight: bold;
-		font-style: normal;
-		float: left;
-		pointer-events: visible;
-
-		&:hover {
-			opacity: 1;
-		}
-	}
-
-	ul {
-		text-align: right;
-		float: right;
-		list-style-type: none;
-		padding: 0;
-		margin: 0;
-		pointer-events: visible;
-
-		li {
-			line-height: (40/16) + rem;
-		}
-		
-		a {
-			opacity: $text-opacity;
-			position: relative;
-		}
-
-		a:hover, .active {
-			opacity: 1;
-		}
-
-		.active {
-			pointer-events: none;
-			cursor: default;
-			border-bottom: $thin-line;
-		}
-	}
+html, body {
+	height: 100%;
 }
 
-.local-nav {
-	border-top: $line-transparent;
-	list-style: none;
-	max-width: (540/18) + em;
-	margin: 0 auto;
-	margin-top: (80/18) + em;
-	padding: 0;
+header, footer, section {
+	padding: (60/14) + rem (20/14) + rem;
+}
 
-	li {
-		display: inline-block;
-		margin-top: -(4/18) + em;
-		height: 50px;
-		line-height: 50px;
-		padding: 0 (10/18) + em;
-	}
+header.full-page {
+	height: 100%;
+	width: 100%;
+	display: table;
 
+	.inner {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
 
-	li a {
-		opacity: 0.5;
-	}
-
-	.active a, li a:hover{
-		opacity: 1
-	}
-
-
-	.active {
-		pointer-events: none;
-		cursor: default;
-		border-top: $line;
+		button, .button {
+			margin-top: (20/14) + rem;
+		}
 	}
 }
 
 header {
-	background-color: rgba($black, .4);
-	height: 60%;
-	min-height: (240/18) + em;
-	max-height: (500/18) + em;
-	width: 100%;
-	
-	// Account for the awefulness of vertical align
-	h1, h2, p {
-		margin: (10/18) + rem auto;
-		padding: 0 (100/18) + rem;
-	}
-}
-
-.full-page {
-	height: 100%;
-	width: 100%;
-	min-height: (400/18) + em;
-}
-
-main .inner-side {
-	max-width: (520/18) + em;
-	padding: (100/18) + em 0;
-	margin: 0 inherit;
-	margin: 0 (100/18) + rem;
-
-	h1, h2, p {
-		text-align: left;
-		margin: 0;
-	}
-}
-
-main.white-background {
-	z-index: $normal-zindex;
-	position: relative;
-	background-color: $gray-white;
-	color: $black;
-	padding: (20/18) + em 0
-}
-
-footer {
-	padding-top: (40/18) + em;
-
-	.avatar {
-		width: (100/18) + em;
-		float: left;
-		border-radius: 50%;
-		margin-right: (20/18) + em;
-	}
-}
-
-.inner {
-	max-width: (540/18) + em;
-	padding: 0 (10/18) + em;
-	margin: 0 auto;
-}
-
-section, .section {
-	padding-bottom: (60/18) + em;
-	margin-top: (60/18) + em;
-	margin-bottom: (60/18) + em;
-	border-bottom: $thin-line;
-}
-
-section:last-of-type, .section:last-of-type {
-	border-bottom: none;
-}
-
-article {
-	margin: (30/18) + em 0;
-	border-bottom: $thin-line;
-	padding-bottom: (10/18) + em;
-
-	h3 {
-		margin-bottom: 0;
-	}
-
-	h2 {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	p {
-		margin-top: (10/18) + em;
-	}
-}
-
-article:last-of-type {
-	border-bottom: 0;
-	padding-bottom: 0;
-}
-
-figure.img-side {
-
-	display: inline-block;
-	margin: 0;
-	clear: both;
-
-	img {
-		width: (160/18) + em;
-		float: left;
-		margin-right: (40/18) + em;
-		margin-bottom: (30/18) + em;
-	}
-}
-
-figure.img-side:first-of-type {
-	margin-top: (20/18) + em;
-}
-
-figure.img-bottom {
-	margin: 0;
-	img {
-		width: 100%;
-	}
-}
-
-.white-background video, .white-background img, .white-background .video, .white-background .wistia_embed {
-	width: 100%;
-	margin: (20/18) + em 0;
-	outline: 2px solid $gray-light;
-}
-
-.white-background .gallery a {
-	display: inline-block;
-	overflow: visible;
-}
-
-.white-background a:hover {
-	opacity: .5;
-}
-
-.list-unstyled {
-padding-left: 0;
-list-style: none;
-}
-
-.vertical-align-parent {
-	display: table;
-}
-
-.vertical-align {
-	display: table-cell;
-	vertical-align: middle;
 	text-align: center;
+
+	h1 {
+		margin-top: (30/14) + rem;
+	}
 }
 
 img[alt="img-background"], .img-background-parent {
 	display: none;
 }
 
-.share {
+video, img, .video, .wistia_embed {
+	width: 100%;
+	outline: 2px solid #ecf0f1;
+	margin: (20/14) + rem 0;
+}
+
+table {
+	width: 100%;
+}
+
+footer {
 	text-align: center;
+	background: rgba($black, .5);
+	color: white;
+	height: 100%;
+	width: 100%;
+
+	button, .button, button:visited, button:active, .button:active, .button:visited {
+		color: white;
+		background-color: rgba($red, .6);
+		border: 0;
+	}
+}
+
+section .inner, footer .inner, header .inner {
+	max-width: (420/14) + rem;
+	margin: 0 auto;
+}
+
+article {
+	padding-bottom: (30/14) + rem;
+}
+
+.site-nav {
+	position: absolute;
+	width: 100%;
+	padding: (20/14) + rem 0;
+	border-top: 2px solid $red;
+	top: 0;
+	z-index: 1000;
+}
+
+.footer-nav {
+	margin: (20/14) + rem 0;
+}
+
+#home-header {
+	background-color: $gray-white;
+}
+
+#projects {
+	padding: 0;
+
+	.backstretch-canvas {
+		padding: (40/14) + rem (20/14) + rem;
+	}
+
+	h2, a {
+		margin-bottom: (10/14) + rem;
+		margin-top: (10/14) + rem;
+	}
+
+	td:first-of-type h2 {
+		text-align: right;
+	}
+
+	td:not(:last-child) {
+		padding: 0 (10/14) + rem 0 0;
+	}
+
+	background-color: $blue;
+	color: white;
+}
+
+#resume {
+	.position {
+		padding-bottom: (30/14) + rem;
+	}
+
+	h3 {
+		font-size: (18/14) + rem;
+		line-height: (30/14) + rem;
+		margin: 0;
+	}
+
+	h3 a {
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	p:first-of-type {
+		color: $gray;
+		text-align: center;
+	}
+}
+
+#blog {
+	article {
+		h1, p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+nav.case-study, header.case-study {
+	color: white;
+}
+
+section.case-study, #about, #resume, #blog {
+	background: $gray-white;
+}
+
+header.case-study {
+	text-align: center;
+	background: rgba($black, .5);
+	color: white;
 }
