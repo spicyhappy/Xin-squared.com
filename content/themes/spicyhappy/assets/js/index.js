@@ -86,10 +86,9 @@ $(document).ready(function(){
 
   $('#projects tr').hover(function() {
     number = $(this).attr('class');
-    $(this).css({'opacity':'50%'});
-    $('#projects .backstretch-canvas').backstretch([projects[number]], {speed: 1000});
-    $('#projects').css({"background-color":"#111111"});
-    $('#projects .backstretch').css({"opacity":".5", "filter":"alpha(opacity=60)"});
+    $('#projects .backstretch-canvas').backstretch([projects[number]], {speed: 600});
+
+    $('#projects .backstretch').css({"opacity":".3", "filter":"alpha(opacity=30)"});
   },
     function() {
       $('#projects').css({"background-color":"#15bded"});
