@@ -1,12 +1,24 @@
 Now
+- easy changing between projects
 - browser testing: IE 9+, Chrome, Firefox, Android
 - more content
 - auto restart ghost on push
+- button shifts are weird
+- thicker red top on bigger screens
+- blackhat low res
+
 
 Nice to have
-- responsive youtube & wisia. Use http://wistia.com/doc/video-foam or wmode http://wistia.com/doc/embed-options
 - don't count self on google analytics
 - auto-save to production database
 - resume pdf
 - prevent from attacks
 - 404 error page
+
+[video]
+In the press
+New York Times: http://boss.blogs.nytimes.com/2012/02/28/a-higher-tech-way-to-find-overseas-suppliers/
+Techcrunch: http://techcrunch.com/2012/10/04/panjiva-adds-global-search-to-its-social-network-for-world-manufacturing/
+GlobalTrade: http://globaltrademag.com/panjiva-creates-first-b2b-platform-to-offer-searchable-chinese-trade-data/
+Apparel: http://apparel.edgl.com/news/Panjiva--9-Percent-of-Buyers-Eyeing-Africa91075
+Logistics Management: http://www.logisticsmgmt.com/article/global_trade_has_a_bounce_back_month_according_to_panjiva_data
